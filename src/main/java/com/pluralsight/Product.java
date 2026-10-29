@@ -36,4 +36,10 @@ public class Product {
     public void setProductPrice(double productPrice) {
         this.productPrice = productPrice;
     }
+
+    public String toString() {
+        return productId + " | " + productName + " | $" +
+                String.format("%.2f", productPrice);
+    }
 }
+
